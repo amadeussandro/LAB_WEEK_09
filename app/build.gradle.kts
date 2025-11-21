@@ -48,17 +48,18 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
 
-    // ⬇⬇ TAMBAHKAN BOM MANUAL DI SINI
+    // BOM Compose manual
     implementation(platform("androidx.compose:compose-bom:2023.10.01"))
-
-    // Kalau mau aman, boleh hapus yg ini:
-    // implementation(platform(libs.androidx.compose.bom))
 
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
 
+    // Material 3 fixed version
     implementation("androidx.compose.material3:material3:1.1.2")
+
+    // ⭐ ADD: Navigation Compose
+    implementation("androidx.navigation:navigation-compose:2.7.4")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

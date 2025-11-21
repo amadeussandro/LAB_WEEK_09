@@ -3,4 +3,7 @@
     <string name="list_title">This is the list title</string>
     <string name="enter_item">Enter your item</string>
     <string name="button_click">Click</string>
+
+    <!-- Tambahin ini -->
+    <string name="button_navigate">Finish</string>
 </resources>
