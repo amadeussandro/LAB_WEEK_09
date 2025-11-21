@@ -114,7 +114,7 @@ fun Home(
 }
 
 //
-// PREVIEW UNTUK HOME(items)
+// PREVIEW sUNTUK HOME(items)
 //
 @Preview(showBackground = true)
 @Composable
