@@ -43,23 +43,25 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
 
-    // BOM Compose manual
+    // Compose BOM (manual)
     implementation(platform("androidx.compose:compose-bom:2023.10.01"))
 
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
 
-    // Material 3 fixed version
+    // Material 3 manual version
     implementation("androidx.compose.material3:material3:1.1.2")
 
-    // ⭐ ADD: Navigation Compose
+    // Navigation
     implementation("androidx.navigation:navigation-compose:2.7.4")
+
+    // ⭐ MOSHI (BONUS)
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
